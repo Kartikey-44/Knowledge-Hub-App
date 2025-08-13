@@ -16,6 +16,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="Back"
+            android:background="@color/gray"
             android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
             android:src="@drawable/outline_arrow_back_24"/>

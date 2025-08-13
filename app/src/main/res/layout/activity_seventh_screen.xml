@@ -17,6 +17,7 @@
            android:layout_height="48dp"
            android:layout_marginTop="30dp"
            android:layout_marginStart="10dp"
+           android:background="@color/gray"
            android:contentDescription="Back"
            android:src="@drawable/outline_arrow_back_24"/>
     <TextView
