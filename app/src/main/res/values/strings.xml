@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KNOWLEDGE HUB</string>
+    <string name="android_dev">Android\nApp\nDevlopement</string>
+    <string name="web_dev">Web\nDevelopement</string>
+    <string name="ios_dev">IOS\nAPP\nDevlopment</string>
+    <string name="ml">Machine\nLearning</string>
+    <string name="b_c">BlockChain</string>
+    <string name="ca">CyberSecurity</string>
+    <string name="dart_and_flutter">dart and flutter</string>
+    <string name="swift">swift</string>
+    <string name="ide">The IDE To Use :</string>
+    <string name="back">Back</string>
+    <string name="ios_app_development">IOS App Development</string>
+    <string name="languages_can_be_used">Languages Can Be Used:</string>
+</resources>

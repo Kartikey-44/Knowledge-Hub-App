@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen"
+    android:orientation="vertical"
+    android:background="@color/beige">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            android:layout_marginStart="10dp"
+            android:src="@drawable/outline_arrow_back_24"
+            android:contentDescription="@string/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Learn The \nTop Trending Technologies \nOf The World"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ad_dev"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:clipToOutline="true">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/androidlogo"
+                   android:alpha="0.5"
+                   android:clipToOutline="true"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:text="Android App Development"
+                   android:textSize="15sp"
+                   android:layout_gravity="center"
+                   android:textAlignment="center"
+                   android:textStyle="bold"/>
+
+           </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/web_dev"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToOutline="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/webdevlogo"
+                    android:alpha="0.5"
+                    android:clipToOutline="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web\nDevelopment"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ios_dev"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToOutline="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ioslogo"
+                    android:alpha="0.2"
+                    android:clipToOutline="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IOS\nApp\nDevelopment"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ml_dev"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToOutline="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mllogo"
+                    android:alpha="0.2"
+                    android:clipToOutline="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Machine\nLearning"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+           android:id="@+id/chain_dev"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToOutline="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/chainlogo"
+                    android:alpha="0.2"
+                    android:clipToOutline="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BlockChain"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cs"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="30dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/offwhite">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToOutline="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cyberlogo"
+                    android:alpha="0.2"
+                    android:clipToOutline="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cyber\nSecurity"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Call Us"
+        android:layout_gravity="center" />
+
+</LinearLayout>

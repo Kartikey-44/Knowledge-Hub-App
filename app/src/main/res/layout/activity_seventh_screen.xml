@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdScreen"
+    android:orientation="vertical"
+    android:background="@color/gray">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageButton
+           android:id="@+id/back"
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginStart="10dp"
+           android:contentDescription="Back"
+           android:src="@drawable/outline_arrow_back_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BlockChain"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/offwhite"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages Can Be Used:"
+        android:textColor="@color/offwhite"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/py"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="30dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pythonlogo"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/java"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:clipToOutline="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="30dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/java"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The IDE To Use :"
+        android:textStyle="bold"
+        android:textColor="@color/offwhite"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/remix"
+        android:layout_margin="20dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="60dp"
+        android:layout_gravity="center"
+        android:clipToOutline="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/remixide"
+            android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remix IDE"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Databases That Can Be Used:"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/offwhite"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bigchain"
+            android:layout_width="120dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:layout_margin="20dp"
+            android:clipToOutline="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/bigchain"/>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mongodb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="60dp"
+            android:clipToOutline="true">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mongodb"
+                android:clipToOutline="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
