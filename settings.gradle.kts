@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "XML ONE APP"
+rootProject.name = "Knowledge Hub"
 include(":app")
  
