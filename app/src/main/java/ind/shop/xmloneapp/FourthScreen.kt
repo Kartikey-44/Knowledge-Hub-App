@@ -22,7 +22,7 @@ class FourthScreen : AppCompatActivity() {
         }
         val js=findViewById<CardView>(R.id.js)
         val html=findViewById<CardView>(R.id.htmlcss)
-        val vs=findViewById<CardView>(R.id.htmlcss)
+        val vs=findViewById<CardView>(R.id.vscode)
         val firebase=findViewById<CardView>(R.id.firebase)
         val sql=findViewById<CardView>(R.id.sql)
 

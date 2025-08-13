@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.nio.channels.InterruptedByTimeoutException
 
 class SecondScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,19 +22,21 @@ class SecondScreen : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val number=9793139213
-        val callbutton=findViewById<Button>(R.id.call)
-            .setOnClickListener {
-                val intent= Intent(Intent.ACTION_DIAL)
-                intent.data= Uri.parse("tel:$number")
-                startActivity(intent)
-            }
+
+
+
         val android_dev=findViewById<CardView>(R.id.ad_dev)
         val web_dev=findViewById<CardView>(R.id.web_dev)
         val ios_dev=findViewById<CardView>(R.id.ios_dev)
         val ml=findViewById<CardView>(R.id.ml_dev)
         val block=findViewById<CardView>(R.id.chain_dev)
         val cyber=findViewById<CardView>(R.id.cs)
+        val back=findViewById<ImageButton>(R.id.back)
+        val phone=findViewById<ImageButton>(R.id.phone)
+        val gMail=findViewById<ImageButton>(R.id.gmail)
+        val insta=findViewById<ImageButton>(R.id.insta)
+        val discord=findViewById<ImageButton>(R.id.discord)
+        val number=999999999
 
         android_dev.setOnClickListener {
             intent= Intent(applicationContext, ThirdScreen::class.java)
@@ -60,11 +63,32 @@ class SecondScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val back=findViewById<ImageButton>(R.id.back)
-            .setOnClickListener {
+            back.setOnClickListener {
                 intent= Intent(applicationContext, FirstScreen::class.java)
                 startActivity(intent)
             }
+        phone.setOnClickListener {
+            val intent= Intent(Intent.ACTION_DIAL)
+            intent.data=Uri.parse("tel:$number")
+            startActivity(intent)
+        }
+        discord.setOnClickListener {
+            val intent= Intent(Intent.ACTION_VIEW)
+            intent.data= Uri.parse("https://discord.com/channels/@me")
+            startActivity(intent)
+        }
+        insta.setOnClickListener {
+            val intent= Intent(Intent.ACTION_VIEW)
+            intent.data= Uri.parse("https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&is_from_rle")
+            startActivity(intent)
+        }
+        gMail.setOnClickListener {val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1")
+
+            startActivity(intent)
+        }
+
+
 
 
 

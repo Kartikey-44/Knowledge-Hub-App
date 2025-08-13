@@ -14,13 +14,13 @@
         android:orientation="horizontal">
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
-
-            android:layout_marginStart="10dp"
-            android:src="@drawable/outline_arrow_back_24"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/back_arrow_icon_icons_com_54057"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/back"/>
         <TextView
             android:layout_width="match_parent"
@@ -259,11 +259,54 @@
 
 
     </LinearLayout>
-    <Button
-        android:id="@+id/call"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="Call Us"
-        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <ImageButton
+            android:id="@+id/phone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icons8_phone__1_"
+            android:layout_marginStart="40dp"
+            android:contentDescription="Call"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <ImageButton
+            android:id="@+id/gmail"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="gmail"
+            android:src="@drawable/icons8_gmail_logo__3_"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageButton
+            android:id="@+id/insta"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icons8_instagram_logo"
+            android:layout_marginStart="40dp"
+            android:contentDescription="insta"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <ImageButton
+            android:id="@+id/discord"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icons8_discord"
+            android:layout_marginStart="40dp"
+            android:contentDescription="Call"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>
