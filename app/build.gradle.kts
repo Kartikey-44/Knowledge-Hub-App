@@ -8,7 +8,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "ind.shop.xmloneapp"
+        applicationId = "ind.shop.knowledgehub"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

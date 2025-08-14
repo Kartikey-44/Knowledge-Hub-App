@@ -7,8 +7,10 @@
 
     <style name="Theme.KnowledgeHub" parent="Base.Theme.KnowledgeHub" />
     <style name="Theme.MyApp.Splash" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/logo</item>
+        <!-- Just plain white background, no drawable -->
+        <item name="android:windowBackground">@color/white</item>
     </style>
+
 
 
 </resources>
