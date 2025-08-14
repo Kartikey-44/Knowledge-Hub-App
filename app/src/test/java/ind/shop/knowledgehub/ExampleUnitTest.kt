@@ -1,4 +1,4 @@
-package ind.shop.xmloneapp
+package ind.shop.knowledgehub
 
 import org.junit.Test
 

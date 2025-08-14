@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ind.shop.xmloneapp"
+    namespace = "ind.shop.knowledgehub"
     compileSdk = 36
 
     defaultConfig {

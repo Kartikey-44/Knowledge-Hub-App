@@ -1,4 +1,4 @@
-package ind.shop.xmloneapp
+package ind.shop.knowledgehub
 
 import android.content.Intent
 import android.net.Uri
@@ -10,54 +10,48 @@ import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SeventhScreen : AppCompatActivity() {
+class FourthScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_seventh_screen)
+        setContentView(R.layout.activity_fourth_screen)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val py=findViewById<CardView>(R.id.py)
-        val java=findViewById<CardView>(R.id.java)
-        val remix=findViewById<CardView>(R.id.remix)
-        val bigchain=findViewById<CardView>(R.id.bigchain)
-        val mongo=findViewById<CardView>(R.id.mongodb)
+        val js=findViewById<CardView>(R.id.js)
+        val html=findViewById<CardView>(R.id.htmlcss)
+        val vs=findViewById<CardView>(R.id.vscode)
+        val firebase=findViewById<CardView>(R.id.firebase)
+        val sql=findViewById<CardView>(R.id.sql)
 
 
-
-
-        py.setOnClickListener {
+        js.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://www.python.org/doc/")
+            intent.data= Uri.parse("https://developer.mozilla.org/en-US/docs/Web/JavaScript")
             startActivity(intent)
         }
-
-        java.setOnClickListener {
+        html.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://docs.oracle.com/en/java/")
+            intent.data=Uri.parse("https://htmlandcssguidebook.com/")
             startActivity(intent)
         }
-
-        remix.setOnClickListener {
+        vs.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://dev.guangweiblog.com/remix/")
+            intent.data=Uri.parse("https://code.visualstudio.com/Docs")
             startActivity(intent)
         }
-
-        bigchain.setOnClickListener {
+        firebase.setOnClickListener {
             val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://docs.bigchaindb.com/en/latest/")
+            intent.data= Uri.parse("https://firebase.google.com/docs/")
             startActivity(intent)
-        }
 
-        mongo.setOnClickListener {
-            val intent= Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://www.mongodb.com/docs/?msockid=1e65dff9ba0e6acb3675cb00bbfc6b5a")
-            startActivity(intent)
         }
+        sql.setOnClickListener {
+            val intent= Intent(Intent.ACTION_VIEW)
+            intent.data= Uri.parse("https://dev.mysql.com/doc/")
+            startActivity(intent)}
 
         val back=findViewById<ImageButton>(R.id.back)
             .setOnClickListener {
